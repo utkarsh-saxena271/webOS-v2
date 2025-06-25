@@ -7,9 +7,32 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="main">
-        <div id="bootScreen"></div>
-        <div id="osSelector" class="hidden"></div>
+    <div id="main" >
+        <div id="bootScreen" class="hidden">
+            <div class="boot">
+                <h1>WebOs-v2</h1>
+                <p>booting up...</p>
+            </div>
+            <div class="loadingBar">
+                <div class="progress"></div>
+            </div>
+        </div>
+        <div id="osSelector" >
+            <div class="slctab">
+                <div class="selectwindows">
+                    <img src="assets/logos/windows.webp" alt="Windows">
+                    <br>
+                    <button>Open Windows</button>
+                </div>
+                <div class="divide"></div>
+                <div class="selectmac">
+                    <img src="assets/logos/macos.png" alt="Mac">
+                    <br>
+                    <button>Open Mac</button>
+                </div>
+                
+              </div>
+        </div>
         <div id="windowsLoader" class="hidden"></div>
         <div id="windowsUI" class="hidden"></div>
         <div id="macLoader" class="hidden"></div>
