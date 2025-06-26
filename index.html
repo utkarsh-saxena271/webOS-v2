@@ -1,13 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles/windows.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
 </head>
+
 <body>
-    <div id="main" >
+    <div id="main">
         <div id="bootScreen" class="hidden">
             <div class="boot">
                 <h1>WebOs-v2</h1>
@@ -20,32 +27,58 @@
         <div id="osSelector" class="hidden">
             <div class="slctab">
                 <div class="selectwindows">
-                    <img src="assets/logos/windows.webp" alt="Windows">
-                    <br>
+                    <img src="assets/logos/windows.webp" alt="Windows" />
+                    <br />
                     <button>Open Windows</button>
                 </div>
                 <div class="divide"></div>
                 <div class="selectmac">
-                    <img src="assets/logos/macos.webp" alt="Mac">
-                    <br>
+                    <img src="assets/logos/macos.webp" alt="Mac" />
+                    <br />
                     <button>Open Mac</button>
                 </div>
-                
-              </div>
+            </div>
         </div>
-        <div id="windowsLoader" >
+        <div id="windowsLoader" class="hidden">
             <div class="lc">
-                <img src="assets/logos/windows.webp" alt="">
+                <img src="assets/logos/windows.webp" alt="" />
                 <p>Opening windows...</p>
                 <div class="loadingBar">
                     <div class="progress"></div>
                 </div>
             </div>
         </div>
-        <div id="windowsUI" class="hidden"></div>
+        <div id="windowsUI">
+            <div id="cntxtmenuw"></div>
+            <div id="taskbarw">
+                <div id="left">
+                    <img src="" alt="" />
+                    <span>
+                        <h6>78&deg; F</h6>
+                        <h6>Sunny</h6>
+                    </span>
+                </div>
+                <div id="center">
+                    <img src="assets/icons/start.png" alt="start">
+                    <input type="text" placeholder="🔍Search">
+                    <img src="assets/icons/chrome.png" alt="chrome">
+                    <img src="assets/icons/vscode.png" alt="vscode">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                </div>
+                <div id="right">
+                    <span id="wifi"><i class="ri-wifi-line"></i></span>
+                    <span id="battery"><i class="ri-battery-fill"></i></span>
+                    <div id="datetime">
+                        <span id="clock">00:00</span>
+                        <span id="date">dd/mm/yyyy</span>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div id="macLoader" class="hidden">
             <div class="lc">
-                <img src="assets/logos/macos.webp" alt="">
+                <img src="assets/logos/macos.webp" alt="" />
                 <p>Opening Mac...</p>
                 <div class="loadingBar">
                     <div class="progress"></div>
@@ -56,4 +89,5 @@
     </div>
     <script src="main.js"></script>
 </body>
+
 </html>
