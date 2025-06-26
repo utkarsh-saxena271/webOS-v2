@@ -124,3 +124,54 @@ width: 200px;
   .slctab>div>button:active{
     scale: 0.9;
   }
+
+/* loader Ui */
+  /* Windows and Mac*/
+  #windowsLoader,#macLoader{
+    height: 100%;
+    width: 100%;
+    background-color: #111;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .lc{
+    /* background-color: pink; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .lc>img{
+    height: 100px;
+    width: 100px;
+  }
+  /* .loadingBarw{
+    height: 5px;
+    width: 200px;
+    background-color: rgb(96, 87, 87);
+    margin-top: 5px;
+    border-radius: 20px;
+}
+  .progressw{
+    height: 100%;
+    background-color: white;
+    border-radius: 10px;
+    animation: fillbar 5s cubic-bezier(0.19, 1, 0.22, 1) 0.5s forwards;
+}
+
+.loadingBarm{
+  height: 5px;
+  width: 200px;
+  background-color: rgb(96, 87, 87);
+  margin-top: 5px;
+  border-radius: 20px;
+}
+.progressm{
+  height: 100%;
+  background-color: white;
+  border-radius: 10px;
+  animation: fillbar 7s cubic-bezier(0.19, 1, 0.22, 1) 0.5s forwards;
+} */
