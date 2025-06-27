@@ -33,7 +33,56 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 5px 20px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    user-select: none;
 }
 #taskbarw>div>img{
     height: 35px;
+    padding: 2px;
+    cursor: pointer;
+}
+#taskbarw>div>.tbp:hover{
+    scale: 1.2;
+    background-color: rgba(151, 155, 158,0.4);
+    border-radius: 10px;
+    cursor: pointer;
+}
+#left{
+    display: flex;
+    font-size: 1.5rem;
+}
+#left h6{
+    font-weight: 300;
+}
+
+#right{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+#datetime{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#datetime > div {
+    font-size: 0.9rem;
+    line-height: 1.2;
+}
+
+#center{
+    height: 100%;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#center input{
+    height: 85%;
+    width: 60%;
+    border-radius: 50px;
+    border: 1px solid gray;
+    padding: 2px 10px;
 }
